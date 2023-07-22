@@ -1,0 +1,11 @@
+/* use of css-module for specific styling */
+.Heading{
+    text-align: center;
+    color: aqua;
+    background-color: blue;
+    background: linear-gradient(to right, aqua,lightblue,darkblue,teal,grey);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 19px;
+}

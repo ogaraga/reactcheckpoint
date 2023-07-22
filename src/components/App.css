@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.App{
+    overflow: hidden;
+    background-color: lightcoral;
+    height: 100vh;
+    margin-top: 0;
+}
+@media screen and (max-width:500px) {
+    .App{
+        overflow: visible;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+}

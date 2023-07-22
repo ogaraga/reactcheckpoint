@@ -1,0 +1,188 @@
+/* use of css-module for specific styling */
+.cards{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 50px;
+    margin: auto;
+    margin-top: -50px;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:500px) {
+    .cards{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        overflow: visible;
+    }
+}
+.cards .card1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 10px;
+    width: 180px;
+    background-color: grey;
+    height: 350px;
+    border-width: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px yellow, -3px -4px 5px yellow;
+}
+.cards .card2{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 10px;
+    background-color: grey;
+    width: 180px;
+    height: 350px;
+    border-width: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px yellow, -3px -4px 5px yellow;
+}
+.cards .card3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 10px;
+    padding: 10px;
+    background-color: grey;
+    width: 180px;
+    height: 350px;
+    border-width: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px yellow, -3px -4px 5px yellow;
+}
+.cards .card1:hover{
+    background-color: teal;
+    cursor: pointer;
+    box-shadow: 3px 4px 5px black, -3px -4px 5px aquamarine;
+}
+.cards .card2:hover{
+    background-color: crimson;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px blue, -2px -3px 5px grey;
+}
+.cards .card3:hover{
+    background-color: darkorange;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px grey, -2px -3px 5px white;
+}
+
+.card1 .img1{
+    border-radius: 50%;
+    background-color: grey;
+    margin: -3px auto;
+    box-shadow: 2px 3px 5px lightcoral, -2px -3px 5px lightcoral;
+}
+.card2 .img2{
+    border-radius: 50%;
+    background-color: grey;
+    margin: -10px auto;
+    box-shadow: 2px 3px 5px lightcoral, -2px -3px 5px lightcoral;
+}
+.card3 .img3{
+    border-radius: 50%;
+    background-color: grey;
+    margin: -3px auto;
+    box-shadow: 2px 3px 5px lightcoral, -2px -3px 5px lightcoral;
+}
+.card1 .img1:hover{
+    animation: hover 1s linear forwards;
+}
+.card2 .img2:hover{
+    animation: hover 1s linear forwards;
+}
+.card3 .img3:hover{
+    animation: hover 1s linear forwards;
+   }
+   @keyframes hover {
+    0%{
+         transform: rotate(0deg);opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg) scale(1);opacity: 0;
+    }
+   }
+
+
+.card1 hr{
+    height: 5px;
+    width: 100%;
+    color: crimson;
+    font-weight: bolder;
+}
+.card2 hr{
+    height: 5px;
+    width: 100%;
+    color: crimson;
+    font-weight: bolder;
+}
+.card3 hr{
+    height: 5px;
+    width: 100%;
+    color: crimson;
+    font-weight: bolder;
+}
+.card1 h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}
+.card1 p{
+    font-size: 17px;
+    text-align: justify;
+    word-spacing: normal;
+    color: aqua;
+    font-family: cursive;
+}
+.card1 h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}
+.card2 p{
+    font-size: 17px;
+    text-align: justify;
+    word-spacing: normal;
+    color: aqua;
+    font-family: cursive;
+}
+.card2 h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}
+.card3 p{
+    font-size: 17px;
+    text-align: justify;
+    word-spacing: normal;
+    color: aqua;
+    font-family: cursive;
+}
+.card3 h2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+}

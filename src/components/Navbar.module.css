@@ -1,0 +1,53 @@
+/* use of css-module for specific styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Navbar{
+    background-color: grey;
+    width: 100%;
+    height: 10vh;
+}
+.Navbar:hover{
+    background-color: black;
+    color: aqua;
+}
+.Navbar .ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: auto;
+}
+.ul li{
+    list-style: none;
+    margin: 10px auto;
+    font-size: 20px;
+    transition: all 1s ease;
+}
+.ul li:hover{
+    width: auto;
+    padding: auto;
+    background-color: darkgray;
+    animation: checkMe 1s linear forwards;
+}
+
+.ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.ul li a:hover{
+    width: auto;
+    color: gold;
+    font-variant: small-caps;
+}
+@keyframes checkMe {
+    0%{
+        transform: rotate(0deg) 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
